@@ -3,363 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Dwolla</title>
+    <link rel="stylesheet" href="/dwolla.css" />
     <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Beautyness</title>
   </head>
-  <body style="background-image: url(/assets/images/background.png)">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-      <div class="container">
-        <img src="/assets/images/6.png" height="20" alt="" loading="lazy" />
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background: #2d2d48">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <img src="/assets/images/dwolla.svg" style="width: 10%" />
+
         <button
-          class="navbar-toggler ps-0"
+          class="navbar-toggler"
           type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span
-            class="navbar-toggler-icon d-flex justify-content-start align-items-center"
-          >
-            <i class="fas fa-bars"></i>
-          </span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#pages">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="about" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#services"
-                >Services</a
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Platform
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Developers
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Learn
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pricing
+              </a>
             </li>
           </ul>
 
-          <ul class="navbar-nav flex-row">
-            <li class="nav-item">
-              <a class="nav-link px-2" href="#!">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-2" href="#!">
-                <img src="/assets/images/fb.png" alt="facebook" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ps-2" href="#!">
-                <img src="/assets/images/twi.png" alt="Twi" />
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link ps-2" href="#!">
-                <img src="/assets/images/Social.png" alt="in" />
-              </a>
-            </li>
-          </ul>
+          <svg
+            style="max-width: 2%"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            aria-hidden="true"
+          >
+            <g id="search3_layer">
+              <path
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              ></path>
+            </g>
+          </svg>
+          <form class="d-flex" role="search">
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              style="background-color: blue"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              style="color: white"
+            >
+              Talk to Sales
+            </button>
+          </form>
         </div>
       </div>
     </nav>
+  <div class="container col-xx1-8 px-5 py-4 ms-0 me-0">
+   <1-- Hero Section begins Here></1-->
+   <div class="row flex-1g-row-reverse align-items-center g-5 py-5 px-">
+<div class="col-10 col-sm-8 col-1g-6">
+<img src="/assets/images/homepage.webp" class="d-block mx-1g-auto img-fluid" alt="binance">
 
-    <div
-      class="container text-light"
-      style="padding-top: 10%; padding-bottom: 10%; text-align: center"
-    >
-      <p>THE BEAUTY TEAM</p>
-      <h1 style="margin-top: -20px">Beautyness Expert</h1>
-    </div>
-
-    <div
-      class="container-fluid bg-light"
-      style="
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-      "
-    >
-      <div style="text-align: center; padding: 2%">
-        <p id="heroSmallText" style="font-size: 10px">MEET OUR EXPERTS</p>
-        <h3
-          id="heroLargeText"
-          style="font-family: Playfair Display; margin-top: -15px"
-        >
-          The amazing women behind <br />beautyness
-        </h3>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 gy-4 gx-4">
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="/assets/images/GIRL 1.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Sherlin D’Cruz <br />
-                Beautyness Expert
-              </h5>
-              <p class="card-text">
-                I must explain to you how all this mistaken idea of denouncing
-                pleasure that will araise praising pain
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="/assets/images/Girl 2.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Maria Sharapova <br />
-                Beautyness Expert
-              </h5>
-              <p class="card-text">
-                I must explain to you how all this mistaken idea of denouncing
-                pleasure that will araise praising pain
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="/assets/images/GIRL 3.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Angeline Jenifer <br />
-                Beautyness Expert
-              </h5>
-              <p class="card-text">
-                I must explain to you how all this mistaken idea of denouncing
-                pleasure that will araise praising pain
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="/assets/images/GIRL 4.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Bonham Carter <br />
-                Beautyness Expert
-              </h5>
-              <p class="card-text">
-                I must explain to you how all this mistaken idea of denouncing
-                pleasure that will araise praising pain
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="/assets/images/GIRL 5.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Evanna Lynch <br />
-                Beautyness Expert
-              </h5>
-              <p class="card-text">
-                I must explain to you how all this mistaken idea of denouncing
-                pleasure that will araise praising pain
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="/assets/images/GIRL 6.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Natalia Tena <br />Beautyness Expert</h5>
-              <p class="card-text">
-                I must explain to you how all this mistaken idea of denouncing
-                pleasure that will araise praising pain
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container my-5">
-      <footer class="bg-dark text-center text-lg-start text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row mt-4">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <div
-                class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-                style="width: 150px; height: 150px"
-              >
-                <img src="/assets/images/Logo.png" height="70" alt="" />
-              </div>
-              <h5 class="text-uppercase">See other books</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-book fa-fw fa-sm me-2"></i>All books</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Our
-                    authors</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Execution of the contract</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i
-                    >Supply</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="far fa-file-alt fa-fw fa-sm me-2"></i
-                    >Regulations</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy
-                    policy</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Publishing house</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-white">The BookStore</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">123 Street</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">05765 NY</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a
-                    book</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Write to us</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in
-                    purchasing</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check
-                    the order status</a
-                  >
-                </li>
-                <li>
-                  <a href="#!" class="text-white"
-                    ><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the
-                    newsletter</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          © 2021 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/"
-            >MDBootstrap.com</a
-          >
-        </div>
-        <!-- Copyright -->
-      </footer>
-    </div>
+</div>
+<div class="col-1g-6">
+<h1 class="display-5 fw-bold 1h-1 mb-3">Digitally transform your payments through</h1>
+  <p class="lead">Dwolla's modern aproach replaces legacy technology with a unif</p> 
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+<button type="button" class="btn btn btn-1g px-4 me-md-2">Meet with a Payment </div>
+</div>
+‹/div>
+‹/div>
   </body>
 </html>
