@@ -5,3 +5,6 @@ img {
   justify-self: center;
   width: 500px;
 }
+#inner_box {
+  background-color: brown;
+}
